@@ -1,6 +1,6 @@
 ## Laravel Passport API Demo
 
-Simple mini-project with Laravel Passport Server and a Client (Laravel + Vue.js) to authorize and get some data from API.
+Simple mini-project with Laravel 5.5 Passport Server and a Client (Laravel 5.5 + Vue.js 2) to authorize and get some data from API.
 
 ### How it works
 

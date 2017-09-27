@@ -1,6 +1,6 @@
 ## Laravel Passport API Demo
 
-Simple mini-project with Laravel Passport Server and a Client to authorize and get some data from API.
+Simple mini-project with Laravel Passport Server and a Client (Laravel + Vue.js) to authorize and get some data from API.
 
 ### How it works
 
@@ -49,7 +49,7 @@ Then, we need to take care of Server and Client separately.
 
 **Step 3. Launch client**
 
-That's it, launch your client URL, click Login with Passport and enter default credentials: **admin@admin.com - password**.
+That's it, launch your client URL, click **Login with Passport** and enter default credentials: **admin@admin.com - password**.
 
 ---
 

@@ -43,7 +43,7 @@ Then, we need to take care of Server and Client separately.
 3. Run **composer install**
 4. Run **php artisan key:generate**
 5. In **.env** fill in these variables from Server Database: 
-* **APP_CLIENT_ID**=[oauth_clients.id value]
+* **API_CLIENT_ID**=[oauth_clients.id value]
 * **API_CLIENT_SECRET**=[oauth_clients.secret value]
 * **API_URL** = http(s)://[your_server_url]
 

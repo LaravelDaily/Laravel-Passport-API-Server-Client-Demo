@@ -44,10 +44,12 @@ const app = new Vue({
                     'Authorization': AuthStr 
                 },
             };
-    		axios.get(api_url + '/api/v1/projects', { 'headers': { 'Authorization': AuthStr }}).then(function (response) {
-			  	this.projects = response.data;
-			}.bind(this));
-            this.cancel();
+            if (AuthStr != 'Bearer ') {
+                axios.get(api_url + '/api/v1/projects', { 'headers': { 'Authorization': AuthStr }}).then(function (response) {
+                    this.projects = response.data;
+                }.bind(this));
+                this.cancel();
+            }
     	},
         remove(project) {
             const AuthStr = 'Bearer ' + api_token;
@@ -63,20 +65,20 @@ const app = new Vue({
         create() {
             const AuthStr = 'Bearer ' + api_token;
             let parameters = { 
-                'headers': { 
-                    'Authorization': AuthStr 
-                },
+                'headers': {'Authorization': AuthStr}
+            };
+            var value = {
                 'title' : this.newTitle,
                 'description' : this.newDescription,
             };
             if (!this.editId) {
-                axios.post(api_url + '/api/v1/projects', parameters).then(function(response) {
+                axios.post(api_url + '/api/v1/projects',value,parameters).then(function(response) {
                     this.loadProjects();
                     this.newTitle = '';
                     this.newDescription = '';
-                }.bind(this));
+                }.bind(this)); 
             } else {
-                axios.put(api_url + '/api/v1/projects/' + this.editId, parameters).then(function(response) {
+                axios.put(api_url + '/api/v1/projects/' + this.editId,value,parameters).then(function(response) {
                     this.loadProjects();
                     this.newTitle = '';
                     this.newDescription = '';

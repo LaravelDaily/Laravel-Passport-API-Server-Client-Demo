@@ -6,15 +6,15 @@ Simple mini-project with Laravel 5.5 Passport Server and a Client (Laravel 5.5 +
 
 1. You launch Client URL and see button **Login with Passport**
 
-![Login with Passport](http://webcoderpro.com/passport-client1.png)
+![Login with Passport](https://laraveldaily.com/wp-content/uploads/2018/11/passport-client1.png)
 
 2. You enter credentials from Server database's Users table and log in. Then you get to Authorize the client.
 
-![Passport Authorize](http://webcoderpro.com/passport-client2.png)
+![Passport Authorize](https://laraveldaily.com/wp-content/uploads/2018/11/passport-client2.png)
 
 3. Then you see a Sample CRUD **Projects** where all data management is done via API calls to the Server.
 
-![Passport Projects](http://webcoderpro.com/passport-client3.png)
+![Passport Projects](https://laraveldaily.com/wp-content/uploads/2018/11/passport-client3.png)
 
 ---
 
@@ -65,3 +65,4 @@ Please use and re-use however you want.
 - Follow our [Twitter](https://twitter.com/dailylaravel) and [Blog](http://laraveldaily.com/blog)
 - Subscribe to our [newsletter with 20+ Laravel links every Thursday](http://laraveldaily.com/weekly-laravel-newsletter/)
 - Subscribe to our [YouTube channel Laravel Business](https://www.youtube.com/channel/UCTuplgOBi6tJIlesIboymGA)
+- Enroll in our [Laravel Online Courses](https://laraveldaily.teachable.com/)
